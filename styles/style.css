@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans';
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.slide-back {
+    opacity: 0;
+}
+.slide-main {
+    position: absolute;
+    z-index: 9999999;
+    width: 1200px;
+    height: 3000px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    background: rgba(15, 15, 15, 0.877);
+    box-sizing: border-box;
+    padding: 250px;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+.window-slide {
+    display: flex;
+    margin-right: 1000px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    /* background: linear-gradient(rgb(74, 136, 252), rgb(16, 116, 231)); */
+    width: 500px;   
+    background: rgba(0, 0, 0, 0.404);
+    border: 3px solid white;
+    height: 300px;
+    color: white;
+    border-radius: 25px;
+    box-sizing: border-box;
+    position: fixed;
+    padding: 50px;
+    flex-basis: 100%;
+}
+
+.window-slide p {
+    font-size: 25px;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+.windowslide a {
+    height: 40px;
+}
+.wrapper {
+    display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    height: 70px;
+    /* border-bottom: 3px solid white; */
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav a{
+
+    text-transform: uppercase;
+    padding-right: 30px;
+    font-weight: 700;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: rgb(138, 212, 255);
+}
+.logo {
+    max-width: 100px;
+    padding: 15px 30px 0 30px
+}
+#slider-box {
+    height: 900px;
+    width: 1200px;
+    overflow: hidden;
+}
+.slider {
+    width: 10000px;
+    height: 900px;
+}
+.slider img {
+    float: left;
+    width: 1200px;
+    height: 900px;
+    position: relative;
+    background-color:rgba(0,0,0,.3);
+    display: block;
+}
+
+#slider-box h1 {
+    position: absolute;
+    z-index: 9999;
+    color: white;
+}
+
+.photo {
+    height: 900px;
+    background: url(../img/photo.jpg) center center / cover no-repeat;
+}
+.photo4 {
+    height: 900px;
+    background: url(../img/cp.jpg) center center / cover no-repeat;
+}
+.photo3 {
+    height: 900px;
+    background: url(../img/login.jpg) center center / cover no-repeat;
+}
+.photo2 {
+    height: 900px;
+    background: url(../img/contact.jpeg) center center / cover no-repeat;
+}
+.black{
+    background: rgba(15, 15, 15, 0.658);
+    height: 900px;
+    box-sizing: border-box;
+    width: 1200px;
+}
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 1000px;
+}
+#update {
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: 2px solid;
+    padding: 0px 30px;
+    border-radius: 5%;
+}
+h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+}
+.black {
+    height: 900px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.button {
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.button a{
+    font-size: 20px;
+}
+
+#information-btn {
+    transition: 0.2s;
+}
+.button #information-btn:hover {
+    border-bottom: 2px solid white;
+}
+
+.name {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    /* нулевой padding добавлять не нужно */
+    padding: 0ex;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content {
+
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 50px 50px 0 50px;
+}
+
+.content-text p {
+    font-weight: 400;
+    font-size: 18px;
+}
+/* не добавляйте фиксированную высоту для подобных элементов,
+пускай блок подстраивается под размер содержимого */
+.hide {
+    display:none;
+}
+
+.social-main {
+    height: 75px;
+    padding: 30px;
+    
+}
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-social {
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 10px 10px;
+    transition: 0.2s;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.main-social:hover {
+    background: white;
+    color: black;
+}
+
+.link {
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 10px 10px;
+    transition: 0.2s;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+
+}
+
+.link:hover {
+    background: white;
+    color: black;
+}
+.vk-div, .inst-div, .facebook-div {
+    display: none;
+}
+.link-2 {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 10px;
+    transition: 0.2s;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box
+}
+.link-2:hover {
+    border-bottom: 2px solid white;
+}
+.icons-hide {
+    display: none;
+}
+.trips {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.trips-block {
+    border: 2px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(100% / 3);
+    padding: 30px;
+}
+
+.country-btn {
+    text-align: center;
+}
+
+
+.trips-block:nth-child(1),
+.trips-block:nth-child(2),
+.trips-block:nth-child(3),
+.trips-block:nth-child(4),
+.trips-block:nth-child(5),
+.trips-block:nth-child(6) {
+    border-top: none;
+}
+
+.trips-block:nth-child(1),
+.trips-block:nth-child(2),
+.trips-block:nth-child(4),
+.trips-block:nth-child(5) {
+    border-right: none;
+}
+
+
+.trips-img {
+    width: 40%;
+}
+
+.trips-strip {
+    background: orange;
+    width: 20%;
+    padding: 2px 0;
+    margin: 5% auto;
+}
+
+.trips h3 {
+    text-transform: uppercase;
+}
+
+#footer {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    min-height: 250px;
+    /* border-bottom: 3px solid white; */
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* для footer лучше добавить padding со всех сторон,
+    чтобы контент не прилегал к краям, и тогда не придется
+    добавлять padding отдельно к каждому вложенному элементу */
+}
+
+.position {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(54, 178, 250);
+}
+
+.contacts-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    line-height: 40px;
+}
+
+.social a {
+    padding-right: 10px;
+}
+
+.content button {
+    color: black;
+    border: 2px solid black;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 25px 0;
+    transition: 150ms;
+}
+
+.content button:hover {
+    background: black;
+    color: white;
+}
+
+.jquery {
+    display: flex;
+    justify-content: space-between;
+
+}
+.showhide {
+    padding: 20px;
+    text-align: center;
+}
+
+.show-btn {
+    padding: 10px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 150ms;
+    width: 100px;
+}
+.sss {
+    background-color: #fff;
+    width: 100px;
+    height: 20px;
+}
+h3 {
+    font-size: 13px;
+    margin: 0;
+}
+
+
+.jquery p {
+    font-size: 15px;
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.slider-area {
+    position: absolute;
+    z-index: 999; 
+}
+.slider-center {
+    opacity: 0;
+    transition: .4s;
+    height: 800px;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0.555);
+    text-align: center;
+}
+.slider-center:hover {
+    opacity: 1;
+}
+.slider-text {
+    color: white;
+    font-size: 20px;
+}
+.slider-button {
+    font-weight: 700;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.slider-button:hover {
+    border-bottom: 3px solid white;
+}
+
+/* .fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    transition: .2s;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+} */
+/* #instagram {
+    background: url(img/instagram.png);
+} */
+
+.logo-2 {
+    max-width: 250px;
+}
+#footer a {
+    transition: 0.2s;
+}
+#footer a:hover{
+    color: rgb(138, 212, 255);
+}
+
+.login_text {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.input_l {
+    padding-top: 20px; 
+}
+.input_text  {
+    width: 300px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    transition: .3s;
+    margin-left: 15px;
+}
+
+.login input:focus {
+    background: rgba(255, 255, 255, 0.082);
+}
+#login_btn {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid white;
+    transition: .3s;
+    color: white;
+}
+#login_btn:hover {
+    cursor: pointer;
+    background: #fff;
+    color: black;
+}
+
+.input_g {
+    font-size: 15px;
+    padding: 15px;
+}
+.radio {
+    padding: 15px;
+}
